@@ -1,0 +1,420 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    /* background-color: #0f0f0f; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 100vh; */
+    
+}
+body{
+    /* position:static; */
+}
+
+.video_box:hover{
+    
+}
+/* some shortcuts */
+
+.flex{
+    display: flex; 
+      
+}
+
+.flex_cen{
+    display: flex;
+    align-items: center;
+}
+.flex_cen_cen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon_size{
+    height: 24px;
+    width: 24px;
+}
+.font_size{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text_size{
+    height: 20px;
+    width: 132px;
+
+}
+
+.comm_padding{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 204px;
+    height: 40px;
+}
+
+
+
+
+/* ------------------------navbar style area ---------------------*/
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    width: 100vw;
+    
+    
+    /* padding-left: 16px; */
+    /* padding-right: 16px; */
+    
+    background-color:rgb(0, 0, 0);
+    
+}
+
+/* -------------------nav_dir1-------------------------- */
+
+.wetube_bar{
+    height: 40px;
+    width: 40px;
+}
+
+.wetube_bar{
+    font-size: 30px;
+    
+}
+.wetube_logo{
+    height: 56px;
+}
+
+
+
+/* ---------------------nav_dir2--------------------------- */
+
+
+.nav_dir2{
+    width: 692px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.nav_div2_search{
+    /* border-top-color: ;
+    border-bottom-color: ;
+    border-left-color: ; */
+    /* border-color: #e5e1e1;
+    background-color: aqua; */
+
+    border-radius: 25px;
+    border: .5px solid rgba(213, 213, 217, 0.599);
+}
+.wetube_input:focus-visible{
+    outline: 1px solid #065fd4;
+
+}
+.wetube_input{
+    /* border: none; */
+   
+    width: 536px;
+    height: 40px;
+    background-color: #121212;
+    
+}
+.search_icon{
+    width: 64px;
+    height: 40px;
+    background-color: rgb(35, 33, 33);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    
+}
+
+.search_input{
+    border-right:1px solid rgba(213, 213, 217, 0.599);
+   
+}
+
+.input{
+   
+    padding-left: 16px;
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.nav_mic{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(35, 33, 33);
+}
+
+
+
+/* ---------------------nav_dir3--------------------------- */
+
+
+.nav_dir3{
+
+    width: 156px;
+    justify-content: space-around;
+    /* margin-right: 15px; */
+
+}
+
+.nav_video_create{
+    height: 40px;
+    width: 40px;
+
+}
+
+.nav_bell{
+    height: 40px;
+    width: 40px;
+}
+
+.nav_user_logo{
+    /* height: 40px; */
+    width: 60px;
+
+}
+.nav_div3_font_size{
+    height: 24px;
+    width: 24px;
+    font-size: 20px;
+}
+nav{
+    position: absolute;
+    z-index: 20;
+}
+
+.user_logo{
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+header{
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+}
+
+/* ------------------------video_section_area------------------------------- */
+
+
+.video_section_area{
+    /* height: 100vh; */
+    width: 72%;
+    /* margin-left: 24px; */
+    padding: 0 24px 0 24px ;
+    /* background-color: #453a3a; */
+
+}
+
+
+
+
+
+
+/* ----------------video_section_area_upper----------------------- */
+
+.video_section_area_upper{
+    height: 725px;
+    width: 100%;
+    /* background-color: #2d2db5; */
+    border-radius: 10px;
+
+}
+.video_area{
+    position:absolute;
+    display: block;
+    z-index: 1;
+}
+.video_section_area_upper1{
+    height: 482px;
+    width: 300px;
+    display: none;
+    background-color: #dd1a3e;
+    position: absolute;
+    z-index: 23;
+}
+
+.video_section_area_upper2{
+    height: 3px;
+    width: 1000px;
+    
+    margin: 0 1% 0 1%;
+    background-color: #2b0cc9;
+    position: absolute;
+    z-index: 3;
+    margin-top: 625px;
+
+}
+.video_section_area_upper3{
+   justify-content: space-around;
+   height: 48px;
+   width: 1000px;
+   margin: 0 1% 0 1%;
+   position:absolute;
+   z-index: 7;
+   margin-top: 650px;
+   background-color: #1ca74f;
+
+}
+
+
+/* ----------------video_section_area_lo-------------------------- */
+
+
+.video_section_area_lower{
+    background-color: #5c46ad;
+    width: 1038px;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+}
+
+.video_title_below{
+    font-size: 20px;
+    padding: 8px 0 8px 0;
+    /* height: 28px; */
+    background-color: #453a3a;
+    align-content: center;
+
+}
+
+.channel_details{
+    height: 44px;
+    background-color: #5aaba1;
+
+}
+.video_discription{
+    height: 104px;
+    margin: 12px 12px 0 0;
+    background-color: #903790;
+
+}
+.video_comments{
+    /* height: 100%; */
+    background-color: #a4bb3d;
+
+}
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------- */
+
+
+.recommended_video_section_area{
+    /* background-color: #52a1a1; */
+    width: 426px;
+    height: 100%;
+    padding: 80px 24px 0 0;
+    /* position: absolute; */
+    /* z-index: 19; */
+}
+
+
+
+.body3_upper{
+    height: 56px;
+    /* width: 1758px; */
+    width: 100%;
+    background-color:#0f0f0f;
+    justify-content: space-around;
+
+
+}
+
+.body3_upper_text{
+    height: 32px;
+    align-content: center;
+
+    margin: 12px 12px 12px 0;
+    padding: 0 12px 0 12px;
+    border-radius: 10px;
+    background-color: rgb(35, 33, 33);
+}
+
+.body3_upper_text:hover{
+    background-color:#343333;
+
+}
+
+
+/* --------------------body_part3_lower------------------ */
+.body3_lower{
+    padding-top: 24px;
+    background-color:#0f0f0f;
+    /* height: 700px; */
+    width: 100%;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    overflow-x:scroll;
+    scrollbar-color:rgba(213, 213, 217, 0.599) ;
+
+}
+
+
+.box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* background-color: #b35e5e; */
+    margin: 0 8px 40px 8px;
+}
+
+
+.video_box{
+    width: 168px;
+    height: 94px;
+    /* background-color: #36a96e; */
+    border-radius: 8px;
+}
+
+.content_box{
+    height: 100px;
+    justify-content: space-around;
+    margin-left: 10px;
+
+}
+.video_title{
+
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.video_user_content{
+    width: 100%;
+    height: 100px;
+    /* display: grid; */
+  margin-top: 20px;
+
+}
+
+.views{
+    padding-right: 10px;
+}
+
+
+
+
+iframe#document.html.body.ytp-chrome-controls{
+    display: none;
+}
+
+.ytp-gradient-top{
+    display: none;
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="">
+    <title>Wetube</title>
+    <link rel="stylesheet" href="op/wetube_frontend/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <nav>
+        <div class="nav_dir1 flex_cen">
+            <div class="wetube_bar flex_cen_cen hover" onclick="body1()">
+              <i class="fa-solid fa-bars wetube_barIn  "></i>
+            </div>
+           
+           <img src="op/wetube_frontend/wetube_logo.png" alt=""  class="wetube_logo">
+        
+        </div>
+        <div class="nav_dir2 flex_cen_cen">
+            <form class="nav_div2_search flex_cen_cen">
+                <div class="search_input">
+                    <input type="text" class="input wetube_input" value="" action="/index" method="get" id="videoTitle" placeholder="Search" name="search">
+                </div>
+                <button class="search_icon flex_cen_cen" type="" id="btn" value="submit"  onclick=""> 
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <div class="nav_mic flex_cen_cen hover" >
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+
+        </div>
+        <div class="nav_dir3 flex_cen_cen">
+            <div class="nav_video_create flex_cen_cen hover">
+                 <i class="fa-solid fa-video  nav_div3_font_size"></i>
+            </div>
+            <div class="nav_bell flex_cen_cen hover">
+                <i class="fa-regular fa-bell   nav_div3_font_size"></i>
+           </div>
+           <div class="nav_user_logo flex_cen_cen">
+               <img src="op/wetube_frontend/image1.png" alt="" class="user_logo">
+           </div>
+        </div>
+
+    </nav>
+
+
+    <header>
+        <!-- ----------------------------------- body1 ------------------------------- -->
+        <div class="body1">
+
+             <!-- -----------------upper body ------------------------------- -->
+            <div class="body1_upper">
+                <div class="body1_upper_btn1 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/home.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">Home</div>
+                </div>
+                <div class="body1_upper_btn2 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn2_icon  ">
+                        <img class="icon_size" src="op/wetube_frontend/shorts.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn2_text  font_size text_size">Shorts</div>
+
+                </div>
+                <div class="body1_upper_btn3 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn3_icon">
+                        <img class="icon_size" src="op/wetube_frontend/subscription.png" alt="">
+
+
+                    </div>
+                    <div class="body1_upper_btn3_text  font_size text_size">Subscriptions</div>
+
+                </div>
+                
+            </div>
+
+            <!-- -----------------middle body ------------------------------- -->
+            <div class="body1_middle">
+                <div class="body1_middle_btn1 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        You  >
+                    </div>
+                   
+                </div>
+                <div class="body1_middle_btn2 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/Your_channel.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">Your channel</div>
+
+                </div>
+                <div class="body1_middle_btn3 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/history.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">History</div>
+
+                </div>
+                <div class="body1_middle_btn4 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/Playlists.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">Playlists</div>
+
+                </div>
+                <div class="body1_middle_btn5 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/Your_videos.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">Your videos</div>
+
+                </div>
+                <div class="body1_middle_btn6 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/Watch_later.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">Watch later</div>
+
+                </div>
+                <div class="body1_middle_btn7 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/Liked_videos.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">Liked videos</div>
+
+                </div>
+                
+                
+            </div>
+             <!-- -----------------lower body ------------------------------- -->
+            <div class="body1_lower">
+                <div class="body1_lower_btn1 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">Explore
+                    </div>
+                    
+                </div>
+                <div class="body1_lower_btn2 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/Trending.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">Trending</div>
+
+                </div>
+                <div class="body1_lower_btn3 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/Shopping.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">Shopping</div>
+
+                </div>
+                <div class="body1_lower_btn4 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/Music.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">Music</div>
+
+                </div>
+                <div class="body1_lower_btn5 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/Movies.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">Movies</div>
+
+                </div>
+                <div class="body1_lower_btn6 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/Live.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">Live</div>
+
+                </div>
+                <div class="body1_lower_btn7 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/Gaming.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">Gaming</div>
+
+                </div>
+                <div class="body1_lower_btn8 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/News.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">News</div>
+
+                </div>
+                <div class="body1_lower_btn9 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/Sports.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">Sports</div>
+
+                </div>
+                <div class="body1_lower_btn10 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/Courses.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">Courses</div>
+
+                </div>
+                <div class="body1_lower_btn11 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/Fashion_Beauty.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">Fashion & Beauty</div>
+
+                </div>
+                <div class="body1_lower_btn12 flex_cen_cen comm_padding">
+                    <div class="body1_upper_btn1_icon">
+                        <img class="icon_size" src="op/wetube_frontend/Podcasts.png" alt="">
+
+                    </div>
+                    <div class="body1_upper_btn1_text font_size text_size">Podcasts</div>
+
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="body1_small">
+            <div class="body1_upper_btn1_small comm_style hover">
+                <div class="body1_upper_btn1_icon_small  flex_cen_cen">
+                    <img class="icon_size" src="op/wetube_frontend/home.png" alt="">
+
+                </div>
+                <div class="body1_upper_btn1_text_small  flex_cen_cen">Home</div>
+            </div>
+            <div class="body1_upper_btn2_small comm_style hover">
+                <div class="body1_upper_btn2_icon_small   flex_cen_cen">
+                    <img class="icon_size" src="op/wetube_frontend/shorts.png" alt="">
+
+                </div>
+                <div class="body1_upper_btn2_text_small   flex_cen_cen">Shorts</div>
+
+            </div>
+            <div class="body1_upper_btn3_small comm_style hover">
+                <div class="body1_upper_btn3_icon_small flex_cen_cen">
+                    <img class="icon_size" src="op/wetube_frontend/subscription.png" alt="">
+                </div>
+                <div class="body1_upper_btn3_text_small  flex_cen_cen">Subscriptions</div>
+
+            </div>
+            <div class="body1_upper_btn3_small comm_style hover">
+                <div class="body1_upper_btn3_icon_small flex_cen_cen">
+                    <img class="icon_size" src="op/wetube_frontend/you_logo.png" alt="">
+                </div>
+                <div class="body1_upper_btn3_text_small  flex_cen_cen">You</div>
+
+            </div>
+        </div>
+
+        <!-- ----------------------------------- body2 ------------------------------- -->
+
+        <div class="body2"></div>
+
+        <!-- ----------------------------------- body3 ------------------------------- -->
+        <div class="body3">
+            <div class="body3_upper flex_cen_cen font_size">
+                <p class="p1 body3_upper_text">All</p>
+                <p class="p2 body3_upper_text">Javascript</p>
+                <p class="p3 body3_upper_text">Data Stucture</p>
+                <p class="p4 body3_upper_text">Music</p>
+                <p class="p5 body3_upper_text">Live</p>
+                <p class="p6 body3_upper_text">Gaming</p>
+                <p class="p7 body3_upper_text">Invetions</p>
+                <!-- <p class="p8 body3_upper_text">Computer hardware</p> -->
+                <p class="p9 body3_upper_text">History</p>
+                <p class="p10 body3_upper_text">Smartphones</p>
+                <p class="p11 body3_upper_text">Recently uploaded</p>
+                <p class="p12 body3_upper_text">Watched</p>
+                <p class="p13 body3_upper_text">New to you</p>
+
+            </div>
+            <div class="body3_lower">
+                {{#each boxes}}
+                
+               <div class="box"  data-videoid="{{videoId}}" onclick="location.href='/video_play?videoid=' + this.dataset.videoid;"  >
+                    <div class="video_box">
+                        {{!-- <video class="video_box" src="op/wetube_frontend/video.mp4" ></video> --}}
+                        <img class="video_box1" src="{{videoImage}}" alt="">
+                    </div>
+                    <div class="content_box flex_cen_cen">
+                        <div class="video_user_logo">
+                             <img class="video_user_logoIn" src="{{channelImage}}" alt="">
+         
+                        </div>
+                        <div class="video_user_content">
+                            <div class="video_title"  value="">{{videoTitle}}</div>
+                            <div class="channel_name">{{channelName}}</div>
+                            <div class="views&time flex_cen">
+                                <div class="views">{{views}} views </div>
+                                <div class="time">  2 months ago</div>
+                            </div>
+                        </div>
+                        <div class="video_user_share">
+                            <img class="video_user_shareIn" src="op/wetube_frontend/three_dots.png" alt="">
+                        </div>
+                    </div>
+                </div> 
+               {{/each}}
+            
+                
+
+               
+
+        </div>
+
+
+
+    </header>
+
+
+    
+
+
+
+
+
+
+
+
+    <script src="op/yt_videos.js"></script>
+</body>
+</html>

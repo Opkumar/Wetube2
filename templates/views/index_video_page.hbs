@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/op/wetube_frontend/index_video_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav>
+        <div class="nav_dir1 flex_cen">
+           <div class="wetube_bar flex_cen_cen">
+              <i class="fa-solid fa-bars wetube_barIn  "></i>
+            </div>
+           
+           <img src="op/wetube_frontend/wetube_logo.png" alt=""  class="wetube_logo">
+        
+        </div>
+        <div class="nav_dir2 flex_cen_cen">
+            <div class="nav_div2_search flex_cen_cen">
+                <div class="search_input">
+                    <input type="text" class="input wetube_input" placeholder="Search">
+                </div>
+                <div class="search_icon flex_cen_cen">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav_mic flex_cen_cen">
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+
+        </div>
+        <div class="nav_dir3 flex_cen_cen">
+            <div class="nav_video_create flex_cen_cen">
+                 <i class="fa-solid fa-video  nav_div3_font_size"></i>
+            </div>
+            <div class="nav_bell flex_cen_cen">
+                <i class="fa-regular fa-bell   nav_div3_font_size"></i>
+           </div>
+           <div class="nav_user_logo flex_cen_cen">
+               <img src="op/wetube_frontend/image1.png" alt="" class="user_logo">
+           </div>
+        </div>
+
+    </nav>
+
+    <header    style="display: flex; width: 100vw;">
+        <!-------------------video_section_area-------------------------->
+        
+        <div class="video_section_area "  >
+            
+            <!-------------------video_section_area_upper-------------------------->
+            
+            <div   class="video_section_area_upper"  >
+                <div class="video_area">
+                 <div  id="video-player"></div>
+                </div>
+                
+
+                <div class="video_section_area_upper1"  >
+                   
+                </div>
+                <div class="video_section_area_upper2">
+                     <i class="fa-solid fa-circle"></i>
+             
+                </div>
+                <div class="video_section_area_upper3 flex_cen">
+                    <div class="star_video">
+                        <button onclick="playVideo()">
+                        <i  class="fa-solid fa-play" ></i>
+                        </button>
+                    </div>
+                    <div class="next_video">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </div>
+                    <div class="video_volume">
+                        <i class="fa-solid fa-volume-off"></i>
+                    </div>
+                    <div class="video_timing">0:00 / 15:00</div>
+                    <div class="video_autoplay"></div>
+                    <div class="video_subtile">
+                        <i class="fa-solid fa-closed-captioning"></i>
+                    </div>
+                    <div class="video_settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div class="video_miniplayer">
+                        <i class="fa-regular fa-square"></i>
+                    </div>
+                    <div class="video_theater_mode">
+                        <i class="fa-regular fa-square"></i>
+                    </div>
+                    <div class="video_fullsize">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                    </div>
+                
+                    
+                </div>
+
+            </div>
+
+            <!-------------------video_section_area_lower-------------------------->
+            <div class="video_section_area_lower">
+                <div class="video_title_below">
+                    hey i am om prakash
+                </div>
+                <div class="channel_details"></div>
+                <div class="video_discription"></div>
+                <div class="video_comments"></div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="recommended_video_section_area"   >
+           
+            <div class="body3_upper flex_cen_cen font_size">
+                <p class="p1 body3_upper_text">All</p>
+                <p class="p2 body3_upper_text">Javascript</p>
+                <p class="p3 body3_upper_text">Data Stucture</p>
+                <p class="p4 body3_upper_text">Music</p>
+                <p class="p4 body3_upper_text">gaming</p>
+               
+
+            </div>
+
+
+            <div class="body3_lower">
+                {{#each  boxes}}
+                <div class="box">
+                    <div class="video_box">
+                        <video class="video_box" src="{{videoImage}}" ></video>
+                    </div>
+                    <div class="content_box flex_cen_cen">  
+                        <div class="video_user_content">
+                            <div class="video_title">{{videoTitle}}</div>
+                            <div class="channel_name">{{channelName}}</div>
+                            <div class="views&time flex_cen">
+                                <div class="views">11.5M views </div>
+                                <div class="time">  2 months ago</div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                {{/each}}
+                
+
+            </div>
+    
+            
+
+        </div>
+
+
+
+
+
+
+    </header>
+
+
+    <div id="videoId">{{videoId}}</div>
+
+    
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        // This function creates an <iframe> (and YouTube player) after the API code downloads.
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('video-player', {
+                height: '780px',
+                width: '1038px',
+                videoId: '{{videoId}}',  // Replace with your video ID
+                playerVars: {
+                    'controls': 0,  // Hide default controls
+                    'autoplay': 1,
+                    'modestbranding': 0,
+                    'rel':0,
+                    
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            
+            {{!-- document.getElementsByClassName("video_section_area_upper1")[0].style.display= 'block' --}}
+            event.target.playVideo();
+
+        }
+
+        var done = false;
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING && !done) {
+                setTimeout(stopVideo, 6000);
+                done = true;
+            }
+        }
+
+        function stopVideo() {
+            {{!-- document.getElementById("video-player").style.display= 'none' --}}
+            
+            player.stopVideo();
+        }
+    </script>
+    
+</body>
+</html>
